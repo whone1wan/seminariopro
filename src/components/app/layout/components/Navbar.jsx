@@ -17,10 +17,15 @@ const NAVLINK_ROUTES = [
     link: '/home'
   },
   {
-    name: 'Citas',
+    name: 'Test',
     icon: <UilArchway />,
-    link: 'dating'
+    link: 'surveys'
   },
+  // {
+  //   name: 'Test',
+  //   icon: <UilArchway />,
+  //   link: 'surveys'
+  // },
   {
     name: 'Estadisticas',
     icon: <UilAnalytics />,

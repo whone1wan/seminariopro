@@ -7,6 +7,8 @@ const Home = lazy(() => import('../../pages/home'))
 const Task = lazy(() => import('../../pages/task'))
 const CreateTask = lazy(() => import('../../pages/task/components/Create'))
 const Auth = lazy(() => import('../../pages/auth'))
+const Surveys = lazy(() => import('../../pages/surveys'))
+const Adiccion = lazy(() => import('../../pages/surveys/components/Preferences'))
 
 const App = () => {
   return (
@@ -18,15 +20,8 @@ const App = () => {
             <Route index element={<Home />} />
             <Route path='tasks' element={<Task />} />
             <Route path='tasks/create' element={<CreateTask />} />
-
-            {/* <Route path='surveys' element={<Surveys />} />
-            <Route path='settings' element={<Settings />} />
-            <Route path='careers' element={<Carrers />} />
-            <Route path='careers/:id' element={<Carrer />} />
-            <Route path='user/:uid' element={<User />} />
-            <Route path='surveys/personality' element={<Personality />} />
-            <Route path='surveys/preferences' element={<Preferences />} />
-            <Route path='surveys/vocational' element={<Vocational />} /> */}
+            <Route path='surveys' element={<Surveys />} />
+            <Route path='surveys/adiccion' element={<Adiccion />} />
           </Route>
           <Route path='*' element={<NotFound />} />
         </Routes>
